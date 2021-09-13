@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:8085}
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST:127.0.0.1}
+      port: ${MONGO_PORT:27017}
+      database: ${DB_NAME:my_store}
+  webflux:
+    base-path: /api/v1/prod-mgt
+price-config:
+  cartonDiscount: 10
+  cartonDiscountItemCount: 3
+  unitIncrementPercentage: 30
